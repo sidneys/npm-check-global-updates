@@ -1,7 +1,7 @@
 {
-  "name": "list-global-package-updates",
-  "version": "1.0.0",
-  "description": "List updated latest versions of global packages if available",
+  "name": "npm-check-global-updates",
+  "version": "1.0.2",
+  "description": "Find newer versions of global npm packages",
   "license": "MIT",
   "homepage": "https://sidneys.github.io",
   "author": {
@@ -11,14 +11,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sidneys/list-global-package-updates.git"
+    "url": "git+https://github.com/sidneys/npm-check-global-updates.git"
   },
   "bugs": {
-    "url": "https://github.com/sidneys/list-global-package-updates/issues"
+    "url": "https://github.com/sidneys/npm-check-global-updates/issues"
   },
   "keywords": [
+    "check",
+    "find",
     "global",
-    "package"
+    "modules",
+    "npm",
+    "updater",
+    "updates",
+    "upgrades",
+    "version"
   ],
   "os": [
     "darwin",
@@ -26,15 +33,15 @@
     "linux"
   ],
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=7.0.0"
   },
   "preferGlobal": true,
-  "main": "index.js",
+  "main": "./lib/main.js",
   "bin": {
-    "list-global-package-updates": "./bin/cli.js"
+    "npm-check-global-updates": "./bin/cli.js"
   },
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node ./lib/main.js"
   },
   "dependencies": {
     "app-root-path": "^2.0.1",
